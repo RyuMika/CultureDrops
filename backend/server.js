@@ -4,11 +4,11 @@ const app = express();
 const PORT = 3001;
 
 // Serve static files (HTML, CSS, JS, Images)
-app.use(express.static(path.join(__dirname, '../public')));
+app.use(express.static(path.join(__dirname, '../it.itec')));
 
 // Serve the main HTML file
 app.get('/', (req, res) => {
-  res.sendFile(path.join(__dirname, '../public/html.intex.html'));
+  res.sendFile(path.join(__dirname, '../it.itec/html.intex.html'));
 });
 
 app.listen(PORT, () => {
